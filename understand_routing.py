@@ -14,12 +14,12 @@ def dojo():
 
 @app.route('/say/</<user_name>')
 def say(user_name):
-    return f"Greetings {user_name} !"
+    return (f"Greetings {user_name}) !"
 
 
-@app.route('/<int:num>/<string:word>')
+@ app.route('/<int:num>/<string:word>')
 def repeat(num, word):
-    rep_num = ''
+    rep_num=''
 
     for i in range(0, num):
         rep_num += f"{word}"
